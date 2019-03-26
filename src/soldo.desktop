@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Soldo Wallet
+Comment=Soldo wallet
+Exec=soldo
+Terminal=false
+Type=Application
+Icon=soldo
+MimeType=x-scheme-handler/soldo;
+Categories=Office;Finance;Money;

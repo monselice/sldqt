@@ -1,0 +1,5 @@
+
+set(CN_PROJECT_NAME "sldqt")
+set(CN_CURRENCY_DISPLAY_NAME "Soldo")
+set(CN_CURRENCY_TICKER "SLD")
+set(CN_VERSION Oxygen)
