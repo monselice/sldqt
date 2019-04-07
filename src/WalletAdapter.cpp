@@ -124,7 +124,10 @@ void WalletAdapter::open(const QString& _password) {
   } else {
     Settings::instance().setEncrypted(false);
     try {
-      m_wallet->initAndGenerate("");
+		Crypto::SecretKey dummy;
+
+      //m_wallet->initAndGenerate("");
+      m_wallet->initAndGenerateOrRecover("",dummy,dummy,0,0,1);
     } catch (std::system_error&) {
       delete m_wallet;
       m_wallet = nullptr;
