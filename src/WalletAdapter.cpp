@@ -200,7 +200,7 @@ bool WalletAdapter::save(const QString& _file, bool _details, bool _cache) {
   Q_CHECK_PTR(m_wallet);
   if (openFile(_file, false)) {
     try {
-      m_wallet->save(m_file, _details, _cache);
+      m_wallet->save_71WL(m_file, _details, _cache);
     } catch (std::system_error&) {
       closeFile();
       return false;
