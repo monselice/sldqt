@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
 //$$$$
 	std::string msg01 = std::string(CryptoNote::CRYPTONOTE_NAME) + std::string(" Wallet [Core ") + std::string(PROJECT_VERSION_BUILD_NO) + std::string("] is loading blockchain...");
 	//splash->showMessage(QObject::tr(msg01.c_str()), Qt::AlignLeft | Qt::AlignBottom, Qt::black);
-	splash->showMessage(QObject::tr(msg01.c_str()), Qt::AlignHCenter | Qt::AlignBottom, Qt::black);
+	splash->showMessage(QObject::tr(msg01.c_str()), Qt::AlignHCenter | Qt::AlignBottom, Qt::white);
 //$$$$
 
 	app.processEvents();

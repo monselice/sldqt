@@ -39,6 +39,12 @@ padding: 2px;
      <property name="text">
       <string/>
      </property>
+     <property name="pixmap">
+      <pixmap resource="../../resources.qrc">:/images/images/clock.gif</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
    </item>
    <item>
