@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8.6)
 
 include(CryptoNoteWallet.cmake)
 include(QREncode.cmake)
@@ -35,6 +35,9 @@ if ((${Boost_MAJOR_VERSION} EQUAL 1) AND (${Boost_MINOR_VERSION} EQUAL 54))
 endif ()
 
 include_directories(${Boost_INCLUDE_DIRS})
+include_directories(${CMAKE_SOURCE_DIR}/cryptonote/external/argon2/include)
+include_directories(${CMAKE_SOURCE_DIR}/cryptonote/external/argon2/miniupnpc)
+
 link_directories(${Boost_LIBRARY_DIRS})
 
 set(VERSION "")
@@ -47,6 +50,9 @@ add_definitions(-DGIT_REVISION=\"${GIT_REVISION}\")
 set(CMAKE_AUTOMOC ON)
 
 set(CRYPTONOTE_SOURCES
+  cryptonote/external/miniupnpc/upnpdev.c
+  cryptonote/external/miniupnpc/portlistingparse.c
+  cryptonote/external/miniupnpc/minissdpc.c
   cryptonote/external/miniupnpc/connecthostport.c
   cryptonote/external/miniupnpc/igd_desc_parse.c
   cryptonote/external/miniupnpc/minisoap.c
