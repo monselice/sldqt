@@ -1,4 +1,9 @@
 build/
+cryptonote/
+~build/
+~fresh/
 *~
 CMakeLists.txt.user
 uncrustify.cfg
+*.bak
+cryptonote/readme.md
